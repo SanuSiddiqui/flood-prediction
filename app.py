@@ -2,6 +2,8 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+#page Title
+st.set_page_config(page_title="Flood Prediction", page_icon="🌊", layout="wide")
 # Load Data
 @st.cache_data
 def load_data():
