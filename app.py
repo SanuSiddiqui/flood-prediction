@@ -3,6 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import plotly.express as px
 
+# Set Streamlit page configuration - should be the first Streamlit command
+st.set_page_config(page_title="Flood Prediction", page_icon="🌊", layout="wide")
+
 # Add custom CSS to hide the GitHub icon
 hide_github_icon = """
 #GithubIcon {
@@ -10,9 +13,6 @@ hide_github_icon = """
 }
 """
 st.markdown(hide_github_icon, unsafe_allow_html=True)
-
-# Set Streamlit page configuration - should be the first Streamlit command
-st.set_page_config(page_title="Flood Prediction", page_icon="🌊", layout="wide")
 
 # Load Data
 @st.cache_data
