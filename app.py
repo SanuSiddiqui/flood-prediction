@@ -6,13 +6,15 @@ import plotly.express as px
 # Set Streamlit page configuration - should be the first Streamlit command
 st.set_page_config(page_title="Flood Prediction", page_icon="🌊", layout="wide")
 
-# Add custom CSS to hide the header (including the GitHub icon)
-hide_header_css = """
+# Add custom CSS to hide GitHub icon and the header
+hide_github_and_header_css = """
 <style>
-    header {display: none;}
+    /* Hide the entire header, including the GitHub icon */
+    .css-1v0mbdj {display: none;}  /* This hides the GitHub icon specifically */
+    header {display: none;}  /* This hides the entire header */
 </style>
 """
-st.markdown(hide_header_css, unsafe_allow_html=True)
+st.markdown(hide_github_and_header_css, unsafe_allow_html=True)
 
 # Load Data
 @st.cache_data
