@@ -8,9 +8,11 @@ st.set_page_config(page_title="Flood Prediction", page_icon="🌊", layout="wide
 
 # Add custom CSS to hide the GitHub icon
 hide_github_icon = """
-#GithubIcon {
-  visibility: hidden;
-}
+<style>
+    .css-1v0mbdj {
+        display: none;
+    }
+</style>
 """
 st.markdown(hide_github_icon, unsafe_allow_html=True)
 
