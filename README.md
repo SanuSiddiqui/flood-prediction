@@ -1,4 +1,5 @@
 #Flood Prediction App 🌊
+
 A web application that predicts flood risks based on historical rainfall data across various states. Users can visualize trends, analyze rainfall data by month and period, and receive flood risk predictions.
 Table of Contents
 •	Description
