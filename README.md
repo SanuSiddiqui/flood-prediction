@@ -23,3 +23,9 @@ This web application provides insights into rainfall data from different states 
 The app provides two tabs:
 1. **Home**: Shows key statistics like average, total, max, and min rainfall, along with the flood risk prediction.
 2. **Rainfall Trends**: Displays interactive charts showing rainfall trends and comparisons across years.
+
+## Acknowledgements
+
+- **Streamlit**: For providing an easy-to-use framework for building interactive web apps.
+- **Plotly**: For the interactive charts that make visualizing the data more intuitive.
+- **Pandas**: For data manipulation and analysis.
