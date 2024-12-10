@@ -16,17 +16,6 @@ hide_github_icon_css = """
 """
 st.markdown(hide_github_icon_css, unsafe_allow_html=True)
 
-# App description - Explain functionalities in an expander box
-with st.expander('About this app'):
-    st.markdown('**What can this app do?**')
-    st.info('This app provides insights into rainfall data for different states and helps predict flood risks using historical rainfall data.')
-    st.markdown('**How to use the app?**')
-    st.warning(
-        '1. Select a state and a specific month from the sidebar to view rainfall trends.\n'
-        '2. Choose a period to analyze cumulative rainfall across the years.\n'
-        '3. Explore interactive charts for trends and averages in the Rainfall Charts tab.'
-    )
-
 # Load Data
 @st.cache_data
 def load_data():
